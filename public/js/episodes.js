@@ -18,7 +18,7 @@ function  getEpisodes(){
 	ajax.receiving = getting;
 	ajax.ready = serverRequest;
 	//Si deseo obtener con Ajax data intentando acceder a una URI debo usar una URI  y no una ruta al archivo
-	ajax.request("POST","http://localhost/RICK_AND_MORTY_API/episodes","text");
+	ajax.request("POST","https://wiki-and-morty.herokuapp.com/episodes","text");
 }
 
 //Esta es la funcion que muestra los resultados
@@ -67,7 +67,7 @@ function getPage( elem ){
 	let data = new FormData();
 	data.append("page",page);
 
-	ajax.request("POST","http://localhost/RICK_AND_MORTY_API/episodes","text",data);
+	ajax.request("POST","https://wiki-and-morty.herokuapp.com/episodes","text",data);
 }
 
 //Esta es la funcion que se asigna al metodo ready de ajax
@@ -201,7 +201,7 @@ function searchEpisodes( elem ){
 		data.append("search",value);
 
 		ajax.ready = serverRequest;
-		ajax.request("POST","http://localhost/RICK_AND_MORTY_API/episodes","text",data);
+		ajax.request("POST","https://wiki-and-morty.herokuapp.com/episodes","text",data);
 		return;
 	}
 

@@ -4,7 +4,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Slim\Factory\AppFactory as Slim;
 
 $slim = Slim::create();
-	$slim->setBasePath("/RICK_AND_MORTY_API"); //Esto es cuando ejecuto la app desde localhost
+	//$slim->setBasePath("/RICK_AND_MORTY_API"); //Esto es cuando ejecuto la app desde localhost
 
 	require_once("Classes/RickAndMorty.php");
 
