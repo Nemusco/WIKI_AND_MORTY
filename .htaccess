@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+DirectoryIndex index.php
+#Con estas lineas de codigo hago que app.php sea el archivo principal de mi app sin tener que escribirlo en la url
